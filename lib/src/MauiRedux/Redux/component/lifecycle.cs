@@ -1,4 +1,4 @@
-﻿namespace Redux.framework;
+﻿namespace Redux.Component;
 
 public enum Lifecycle
 {

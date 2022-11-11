@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj",
+      "projectUniqueName": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj",
       "projectName": "Redux",
-      "projectPath": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj",
+      "projectPath": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj",
       "packagesPath": "D:\\Users\\yangxiaomin\\.nuget\\packages",
-      "outputPath": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\obj\\",
+      "outputPath": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -24258,11 +24258,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\maui_redux\\example\\example.csproj",
+      "projectUniqueName": "F:\\maui-redux\\example\\example.csproj",
       "projectName": "example",
-      "projectPath": "F:\\maui_redux\\example\\example.csproj",
+      "projectPath": "F:\\maui-redux\\example\\example.csproj",
       "packagesPath": "D:\\Users\\yangxiaomin\\.nuget\\packages",
-      "outputPath": "F:\\maui_redux\\example\\obj\\",
+      "outputPath": "F:\\maui-redux\\example\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -24294,32 +24294,32 @@
         "net7.0-android33.0": {
           "targetAlias": "net7.0-android",
           "projectReferences": {
-            "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
-              "projectPath": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
+            "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
+              "projectPath": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
             }
           }
         },
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
           "projectReferences": {
-            "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
-              "projectPath": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
+            "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
+              "projectPath": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
             }
           }
         },
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
           "projectReferences": {
-            "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
-              "projectPath": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
+            "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
+              "projectPath": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
             }
           }
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
           "projectReferences": {
-            "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
-              "projectPath": "F:\\maui_redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
+            "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj": {
+              "projectPath": "F:\\maui-redux\\lib\\src\\MauiRedux\\Redux\\Redux.csproj"
             }
           }
         }

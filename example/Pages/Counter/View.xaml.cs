@@ -1,6 +1,5 @@
-using Redux;
 using Redux.Basic;
-using Redux.Component;
+using Redux.Component.Basic;
 using System.Windows.Input;
 
 namespace example.Pages.Counter;

@@ -1,4 +1,4 @@
-﻿using Redux.framework;
+﻿using Redux.Component.Basic;
 
 namespace Redux.Basic;
 
@@ -25,16 +25,16 @@ namespace Redux.Basic;
 public class Action
 {
     private readonly object _type;
-    private readonly dynamic _payload;
+    private readonly dynamic? _payload;
 
-    public Action(object type, dynamic payload = null)
+    public Action(object type, dynamic? payload = null)
     {
         _type = type;
         _payload = payload;
     }
 
     public object Type { get { return _type; } }
-    public object Payload { get { return _payload; } }
+    public dynamic? Payload { get { return _payload; } }
 }
 
 /// Definition of the standard Reducer.
@@ -70,12 +70,12 @@ public delegate Composable<Dispatch> Middleware<T>(
 /// Definition of the standard Store.
 public class Store<T>
 {
-    public Get<T>? getState { get; }
-    public Dispatch? dispatch { get; set; }
-    public Subscribe subscribe { get; set; }
-    public Observable<T> observable { get; set; }
-    public ReplaceReducer<T> replaceReducer { get; set; }
-    public Task<dynamic> teardown { get; set; }
+    public Get<T>? GetState { get; }
+    public Dispatch? Dispatch { get; set; }
+    public Subscribe? Subscribe { get; set; }
+    public Observable<T>? Observable { get; set; }
+    public ReplaceReducer<T>? ReplaceReducer { get; set; }
+    public Task<dynamic>? Teardown { get; set; }
 }
 
 /// Create a store definition
@@ -113,27 +113,4 @@ abstract class AbstractConnector<S, P>
     abstract public SubReducer<S> SubReducer(Reducer<P> reducer);
 }
 
-/// Interrupt if not null not false
-/// bool for sync-functions, interrupted if true
-/// Future<void> for async-functions, should always be interrupted.
-public delegate dynamic Effect<T>(Action action, Context<T> ctx);
-//typedef Effect<T> = dynamic Function(Action action, Context<T> ctx);
 
-public delegate dynamic SubEffect<T>(Action action, Context<T> ctx);
-//typedef SubEffect<T> = FutureOr<void> Function(Action action, Context<T> ctx)
-
-public abstract class BuildContext
-{ }
-
-///  Seen in effect-part
-public abstract class Context<T> //extends AutoDispose implements ExtraData 
-{
-    /// Get the latest state
-    public T? state { get; }
-
-    /// The way to send action, which will be consumed by self, or by broadcast-module and store.
-    public abstract Task<dynamic> dispatch(Action action);
-
-    /// Get BuildContext from the host-widget
-    public BuildContext? context { get; }
-}

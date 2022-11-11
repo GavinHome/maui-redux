@@ -3,9 +3,9 @@ using Redux.Component;
 using Action = Redux.Basic.Action;
 
 namespace example.Pages.Counter;
-internal class CounterPage : Page<CounterState, Dictionary<string, dynamic>>
+public class CounterPage : Page<CounterState, Dictionary<string, dynamic>>
 {
-    internal CounterPage() : base(
+    public CounterPage() : base(
               initState: CounterState.initState,
               view: CounterView.buildView,
               effect: CounterEffect.buildEffect(),

@@ -1,6 +1,5 @@
 ﻿using Redux.Basic;
-using Redux.Component;
-using Action = Redux.Basic.Action;
+using Redux.Component.Basic;
 
 namespace example.Pages.Counter;
 internal partial class CounterView
